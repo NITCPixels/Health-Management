@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import "./contact.css"
+import Navbar from '../Navbar/page';
+import Footer from '../Footer/page';
 
 export default function Contacts() {
     return (
         <div>
+            <Navbar/>
             <div className='main-c'>
                 <div className="heading-wrapper">
                     <div className="contact-heading">CONTACT US</div>
@@ -23,8 +26,8 @@ export default function Contacts() {
 
                                 <div className="detail-name">
                                   
-                                    <div className="name">Mann Sexsena
-                                    <div className="phone-number">Email:saxsena.mann@gmail.com</div>
+                                    <div className="name">Mann Saxena
+                                    <div className="phone-number">Email:saxena.mann@gmail.com</div>
                                     <div className="phone-number">Github:https://github.com/Mann-1909</div>
                                     </div>
 
@@ -58,7 +61,9 @@ export default function Contacts() {
                     </div>
                 
                 </div>
-            </div></div>
+            </div>
+            <Footer/>
+            </div>
 
 
     )

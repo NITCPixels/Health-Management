@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './bmi.css'; // Import CSS file for styling
+import Navbar from '../Navbar/page';
+import Footer from '../Footer/page';
 
 export default function BMICalculator() {
   const [weight, setWeight] = useState('');
@@ -28,7 +30,8 @@ export default function BMICalculator() {
     }
   };
 
-  return (
+  return (<>
+    <Navbar/>
     <div className="container">
       <h2 className="title">BMI Calculator</h2>
       <div className="input-container">
@@ -61,6 +64,8 @@ export default function BMICalculator() {
         </div>
       )}
     </div>
+    <Footer/>
+    </>
   );
 }
 

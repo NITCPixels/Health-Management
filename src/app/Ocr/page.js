@@ -1,6 +1,8 @@
+"use client";
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./ocr.css"
+
 
 function Ocr() {
     const [image, setImage] = useState(null);

@@ -1,6 +1,7 @@
 "use client";
 import firebase from "@/firebase/clientApp";
 import { useState } from "react";
+import { getStorage } from "firebase/storage";
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
@@ -9,6 +10,7 @@ import {
   signInWithRedirect,
 } from "firebase/auth";
 import { auth } from "@/firebase/clientApp";
+// import { useRouter } from 'next/navigation';
 export const useLogin = () => {
   const [user, setUser] = useState(null);
   const [pending, setPending] = useState(true);
@@ -51,14 +53,17 @@ export const useLogin = () => {
     }
   };
   const logout = async () => {
+    // const Router=useRouter();
     try {
       await firebase.auth().signOut();
+      Router.push("/");
       setUser(null);
       setError(null);
     } catch (error) {
       setError(error.message);
     }
   };
+  
   const registerWithEmail = async (email, password) => {
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
@@ -73,6 +78,7 @@ export const useLogin = () => {
       setPending(false);
     }
   };
+  
   return {
     user,
     userDetails,

@@ -2,6 +2,8 @@
 import React from "react";
 import { useState } from "react";
 import "./faq.css";
+import Navbar from "../Navbar/page";
+import Footer from "../Footer/page";
 // import ReactDOM from "react-dom/client/";
 // const root = ReactDOM.createRoot(document.getElementById('arrow'));
 // root.render(<comp/>);
@@ -25,6 +27,7 @@ export default function Faq() {
   };
   return (
     <div>
+      <Navbar/>
       <div className="qwrapper">
         <div className="qwrapper-up">
           <div className="title">FAQs</div>
@@ -71,6 +74,7 @@ export default function Faq() {
 
        
       </div>
+      <Footer/>
     </div>
   );
 }

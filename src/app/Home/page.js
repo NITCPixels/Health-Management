@@ -3,12 +3,15 @@ import styles from './home.module.css'
 import Image from 'next/image'
 import hero from '../../../public/images/doctornurse-svgrepo-com.svg'
 import whatsapp from '../../../public/images/whatsapp-svgrepo-com.svg'
+import ChatBot from '../ChatBot/ChatBot'
+import { useRouter } from 'next/navigation'
 
 function HomePage() {
+  const router = useRouter();
   return (
     <div>
-        <Image src={whatsapp} className={styles['whatsapp-icon']}/>
-        <button className={styles['emergency-button']}>Emergency</button>
+      <ChatBot/>
+        <button className={styles['emergency-button']} onClick={()=>router.push('/sos')} >Emergency</button>
         <div className={styles['hero-section-and-cards']}>
         <div className={styles['hero-section']}>
           <div className={styles['hero-text-section']}>
@@ -19,7 +22,7 @@ function HomePage() {
         <div className={styles['cards']}>
             <div className={styles['card']}>
               ADD PRISCRIPTION
-              <button> Take A Photo </button>
+              <button style={{cursor:'pointer'}} onClick={()=>router.push('/Ocr')}> Take A Photo </button>
             </div>
             <div className={styles['card']}></div>
             <div className={styles['card']}></div>
