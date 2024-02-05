@@ -1,0 +1,83 @@
+.nwrapper{
+    display: flex;
+    width:100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vw;
+    overflow: hidden;
+    background-color: #a5f1e6;
+    @media(max-width:800px){
+        height: 5.5vw;
+    }
+    @media(max-width:650px){
+        height: 7.2vw;
+    }
+    @media(max-width:550px){
+        height: 8.5vw;
+    }
+
+}
+.nwrapper-left{
+    display: flex;
+    width:7vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+ 
+    @media(max-width:650px){
+     width: 8.5vw;
+    }
+    @media(max-width:550px){
+        width: 9vw;
+    }
+}
+.image{
+    display: flex;
+   /* justify-content: first baseline; */
+    background-image: url('../../../public/images/heart.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+    aspect-ratio: 1;
+   
+}
+.nwrapper-right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 60vw;
+    height: auto;
+    color:black;
+    font-family: Poppins;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 1vw;
+    letter-spacing: 0em;
+    text-align: center;
+    @media(max-width:900px){
+    font-size: 1.8vw;
+    width: 65vw;
+    }
+    @media(max-width:750px){
+       font-size: 2.2vw;
+       width: 68vw;
+    }
+    @media(max-width:620px){
+       font-size: 3vw;
+       width: 75vw;
+    }
+}
+.menu{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    @media(width>850px){
+       cursor: pointer;
+     }
+}
+

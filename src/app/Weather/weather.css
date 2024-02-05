@@ -1,0 +1,116 @@
+.mainw{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 5px;
+}
+.wrapperw{
+    display: grid;
+    width: 100vw;
+    height: auto;
+   padding: 3vw;
+  grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    background-color:white;
+    justify-items: center;
+    align-content: center;
+    background-color: #a5f1e6;
+    color: black;
+    overflow: hidden;
+    @media(width<800px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media(width<550px){
+        grid-template-columns:  1fr;
+    }
+}
+.wrapperw-left{
+    display: flex;
+    width:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3vw;
+    padding: 1vw;
+    margin: 1vw;
+    height: auto;
+    @media(width<800px){
+        width: 90%;
+    }
+    background: linear-gradient(to bottom, #33ccff 0%, #ffffff 100%);
+}
+.data1{
+    display: flex;
+  
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Poppins;
+font-size: 3vw;
+font-weight: 700;
+line-height: 4vw;
+letter-spacing: 0em;
+text-align: left;
+@media(width<550px){
+    font-size: 5vw;
+}
+
+}
+.temp{
+    /* width: 40vw; */
+    text-wrap: nowrap;
+
+}
+.data2{
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 2.5vw;
+    letter-spacing: 0em;
+    text-align: left;
+    @media(width<550px){
+        font-size: 3.5vw;
+        line-height: 6vw;
+    }
+}
+.wrapperw-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    /* width:33%; */
+    height: auto;
+    padding: 2vw;
+    border-radius: 3vw;
+    border: 1px solid black;
+    margin: 1vw;
+    @media(width<800px){
+        width: 90%;
+    }
+    @media(width<550px){
+        padding: 1vw;
+    }
+    background: linear-gradient(to bottom, #33ccff 0%, #ffffff 100%);
+}
+.wrapperw-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3vw;
+    margin: 1vw;
+    height: auto;
+    padding: 2vw;
+    background: linear-gradient(to bottom, #33ccff 0%, #ffffff 100%);
+    
+    @media(width<800px){
+        width: 90%;
+        padding: 3.5vw;
+    }
+}

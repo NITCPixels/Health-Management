@@ -1,0 +1,163 @@
+.main-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.heading-wrapper {
+    width: 54.84vw;
+    height: 14.32vw;
+    top: 24.375vw;
+    left: 480px;
+    /* border: 2px solid red; */
+    /* margin-left: 25px; */
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.contact-heading {
+    width: 40.36vw;
+    height: 6.77vw;
+
+    font-family: Poppins;
+    font-size: 6.14vw;
+    font-weight: 600;
+    /* line-height: 177px; */
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.contain-text {
+    width: 26.45vw;
+    height: 3.28vw;
+    /* top: 256px;
+left: 236px; */
+    font-family: Poppins;
+    font-size: 2.5vw;
+    font-weight: 400;
+    /* line-height: 72px; */
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    /* margin-top: 69px;
+margin-left: 130px;  */
+
+}
+
+
+
+.bottom-wrapper {
+
+    width: 84.94vw;
+    height: auto;
+   margin-bottom: 1vw;
+    border-radius: 6px;
+    border: 2.4px solid rgba(0, 0, 0, 0.00);
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(217, 217, 217, 0.55) 100%);
+}
+
+.container-element {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-top: 6.5px;
+
+}
+
+.heading {
+    width: 26.82vw;
+    height: 4.166vw;
+    flex-shrink: 0;
+    top: 487px;
+    left: 258px;
+    font-family: 'Poppins';
+    font-size: 3.52vw;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0em;
+    text-align: left;
+    /* margin: 93px 252px 0px 124px; */
+
+
+}
+
+
+
+
+
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 72px; */
+
+
+}
+
+.detail-name {
+
+
+    width: 50vw;
+    height: 15vw;
+  
+
+    /* border: 2px solid red; */
+    border-radius: 5vw;
+    border: 0.160vw solid #000;
+    background: #FFF;
+    mix-blend-mode: plus-darker;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin-top: 5px;
+
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 25.19vw;
+    height: 3.38vw; */
+    /* top: 644.32px; */
+    /* left: 460.55px; */
+    font-family: 'Anonymous Pro';
+    font-size: 2.93vw;
+    font-weight: 700;
+    /* line-height: 5.18vw; */
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    /* border: 2px solid red; */
+    
+}
+
+.phone-number {
+  
+    font-family: 'Anonymous Pro';
+    font-size: 2.18vw;
+    font-weight: 400;
+    line-height: 2.18vw;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 1vw;
+    color: rgba(0, 0, 0, 1);
+line-height: 2vw;
+
+}
+
+
+
