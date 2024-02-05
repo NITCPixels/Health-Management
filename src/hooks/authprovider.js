@@ -1,7 +1,7 @@
 "use client";
 import firebase from "@/firebase/clientApp";
 import { useState } from "react";
-import { getStorage } from "firebase/storage";
+// import { getStorage } from "firebase/storage";
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
@@ -27,7 +27,7 @@ export const useLogin = () => {
     try {
       const res = await signInWithRedirect(auth, googleProvider);
       if (res) {
-        setUser(res.user);
+        setUser(res.user);s
       }
       console.log(res);
       setPending(false);
@@ -56,7 +56,7 @@ export const useLogin = () => {
     // const Router=useRouter();
     try {
       await firebase.auth().signOut();
-      Router.push("/");
+      // Router.push("/");
       setUser(null);
       setError(null);
     } catch (error) {

@@ -14,7 +14,7 @@ export default function page() {
   const { user,userDetails, pending, error, loginWithGoogle, loginWithEmail, logout, registerWithEmail } = useLogin();
   return (
     <div>
-      {userDetails != null?<div><Navbar/><HomePage/><Weather/><Footer/></div>:<Login/>}
+      {userDetails() != null?<div><Navbar/><HomePage/><Weather/><Footer/></div>:<Login/>}
     </div>
   );
 }

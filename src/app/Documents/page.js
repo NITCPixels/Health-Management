@@ -2,8 +2,10 @@
 import React, { useState, useEffect } from "react";
 import { ref, uploadBytes, getDownloadURL, listAll } from "firebase/storage";
 import { storage } from "../../firebase/clientApp";
-// import { v4 } from "uuid";
-
+import { v4 } from "uuid";
+import Navbar from "../Navbar/page";
+import Footer from "../Footer/page";
+import "./App.css";
 function Documents() {
   const [imageUpload, setImageUpload] = useState(null);
   const [imageUrls, setImageUrls] = useState([]);
@@ -31,6 +33,7 @@ function Documents() {
 
   return (
     <div className="App">
+      <Navbar />
       <input
         type="file"
         onChange={(event) => {

@@ -19,7 +19,7 @@ export default function Navbar() {
     <motion.div whileTap={{color:'red'}}className='menu-list'onClick={()=>router.push('/Faq')}>FAQ</motion.div>
     <motion.div whileTap={{color:'red'}}className='menu-list' onClick={()=>router.push('/Bmi')}>Health Logs</motion.div>
     <motion.div whileTap={{color:'red'}}className='menu-list' onClick={()=>router.push('/Contact')}>Contact US</motion.div>
-    <motion.div whileTap={{color:'red'}}className='menu-list' onClick={()=>{logout()}}>LogOut</motion.div>
+    <motion.div whileTap={{color:'red'}}className='menu-list' onClick={()=>{logout();router.push('/')}}>LogOut</motion.div>
    </motion.div>
     </div>
    </nav>
